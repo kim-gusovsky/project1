@@ -1,0 +1,33 @@
+#circle1{
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    visibility: hidden;
+}
+#circle2{
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    visibility: visible;
+}
+#circle3{
+    height: 200px;
+    width: 100px;
+}
+#circle3:hover>#circle2{
+    visibility: hidden;
+}
+#circle3:hover+#circle1{
+    visibility: visible;
+}
+#circle2:hover +#circle1{
+    visibility: visible;
+}
+#circle3 #circle2:hover{
+    display: block;
+}
+#circle1:hover{
+    visibility: hidden;
+}
